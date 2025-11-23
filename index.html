@@ -1,46 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>SORPRESA CUMPLE</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACCESO FACIAL</title>
+    <link rel="stylesheet" href="./css/face.css" />
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
 
-<link rel="stylesheet" href="./css/Adrian.css">
-</head>
+    <!-- face-api.js -->
+    <script src="https://cdn.jsdelivr.net/npm/face-api.js/dist/face-api.min.js"></script>
+    
+  </head>
+  <body>
+    <div id="contenedor">
+      <h1>VALIDANDO ROSTRO...</h1>
+      <video id="video" autoplay muted></video>
 
-<body>
-
-<div class="stars" id="stars"></div>
-
-<!-- LUNAS (LLENAS) -->
-<div class="moons">
-  <svg class="moon left" viewBox="0 0 200 200">
-    <circle cx="100" cy="100" r="80" fill="#f7fbff"/>
-  </svg>
-
-  <svg class="moon right" viewBox="0 0 200 200">
-    <circle cx="100" cy="100" r="80" fill="#f7fbff"/>
-  </svg>
-</div>
-
-<!-- CONTENIDO CENTRAL -->
-<div class="center">
-  <div class="card">
-    <div class="pulseWrap">
-      <div class="pulseCircle s2"></div>
-      <div class="pulseCircle"></div>
-
-      <!-- TEXTO YA NO EDITABLE -->
-      <div id="mensaje" class="mensaje">
-        FELIZ CUMPLEAÑOS
-      </div>
-
+      <p id="estado">CARGANDO MODELOS...</p>
     </div>
-
-    <div class="hint">ESPERA 5S PARA QUE LAS LUNAS EMPIECEN A ACERCARSE</div>
-  </div>
-</div>
-
-<script src="./js/Adrian.js" type="module"></script>
-</body>
+  </body>
+  <script src="./js/faceAdrian.js"></script>
 </html>
