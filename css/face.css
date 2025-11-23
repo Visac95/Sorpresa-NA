@@ -1,0 +1,40 @@
+:root {
+  --lilaPastel: #cdb4db;
+  --rosaSuave: #ffc8dd;
+  --duraznoClaro: #ffafcc;
+  --celestePastel: #bde0fe;
+  --azulLavanda: #a2d2ff;
+  --blancoSuave: #fdfdfd;
+  --rojoSuave: #cc444bff;
+  --amarilloSuave: #ffe66dff;
+  --morado: #820b8aff;
+  --cian: #54f2f2ff;
+  --negro: #0a0908ff;
+}
+
+body {
+  background: linear-gradient(135deg, var(--lilaPastel), var(--celestePastel));
+  color: var(--negro);
+  font-family: Arial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#contenedor {
+  text-align: center;
+}
+
+#video {
+  width: 300px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px #000;
+}
+
+#estado {
+  margin-top: 20px;
+  font-size: 18px;
+}

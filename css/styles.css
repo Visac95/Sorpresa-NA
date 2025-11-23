@@ -1,0 +1,136 @@
+/*
+Paleta 1 de colores utilizada:
+https://coolors.co/a2d2ff-ffc8dd-ffafcc-60d394-f4ac45
+
+Paleta 2 de colores utilizada:
+
+
+rojo suave: #cc444bff;
+amarillo suave : #ffe66dff;
+morado: #820b8aff;
+cian : #54f2f2ff;
+negro : #0a0908ff;
+
+Fuente recomendada: "Poppins", sans-serif
+
+
+*/
+
+:root {
+  --lilaPastel: #cdb4db;
+  --rosaSuave: #ffc8dd;
+  --duraznoClaro: #ffafcc;
+  --celestePastel: #bde0fe;
+  --azulLavanda: #a2d2ff;
+  --blancoSuave: #fdfdfd;
+  --rojoSuave: #cc444bff;
+  --amarilloSuave: #ffe66dff;
+  --morado: #820b8aff;
+  --cian: #54f2f2ff;
+  --negro: #0a0908ff;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--lilaPastel), var(--celestePastel));
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #d8b7ff, #fff0f6);
+  position: relative;
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #cdb4db;
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: center;
+  outline: none;
+}
+
+button {
+  background-color: #ffc8dd;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ffafcc;
+}
+
+.message {
+  font-size: 14px;
+  color: #6b4f7d;
+}
+
+.hidden {
+  display: none;
+}
+
+.access {
+  font-size: 20px;
+  color: #6b4f7d;
+}
+
+#mensajeEspera {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  display: none;
+}
+
+/* Estilos para el fondo de flores */
+
+.petal {
+  position: absolute;
+  top: -30px;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle at 30% 30%, #ffb6c1 0%, #ff69b4 70%);
+  border-radius: 50% 60% 70% 50%;
+  opacity: 0.9;
+  transform: rotate(0deg);
+  animation: fall linear infinite;
+  z-index: -1;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translateY(110vh) rotate(720deg);
+    opacity: 0.5;
+  }
+}
+
+
