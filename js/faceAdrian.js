@@ -144,5 +144,5 @@ function accesoPermitido() {
             <h1>BIENVENIDO</h1>
         </div>
     `;
-  setTimeout(() => { window.location.href = "nadira.html"; }, 2000);
+  setTimeout(() => { window.location.href = "surprise.html"; }, 2000);
 }
